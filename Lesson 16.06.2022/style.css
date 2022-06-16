@@ -1,0 +1,24 @@
+.parent-div{
+    display:flex; /* Отвечает за отображение контента flex автоматом дает значение в линию. Но его можно поменять flex-direction*/
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+
+    flex-direction: row-reverse; /* меняет направление flex*/
+    flex-direction: column; /* меняет направление flex*/
+    flex-direction: column-reverse; /* меняет направление flex*/
+}
+
+.child-div{
+    margin: 5px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: inherit;  /* Отвечает за отображение контента*/
+    flex-direction: column
+}
