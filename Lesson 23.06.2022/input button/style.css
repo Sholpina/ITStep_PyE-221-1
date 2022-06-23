@@ -1,0 +1,21 @@
+input{
+    padding:10px 15px;
+    border:none;
+    border-radius: 8px;
+    background-color:antiquewhite;
+    transition: all ease 0.3s
+}
+
+input:focus{
+    border:none;
+    background-color: aqua;
+}
+
+button{
+    transition: all ease 0.3s;
+}
+
+button:active{
+    background-color:black;
+    color: white;
+}
