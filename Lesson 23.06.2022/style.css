@@ -1,0 +1,13 @@
+div p{
+    margin: 50px;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+}
+
+span h1{
+    margin: 50px;
+    padding: 15px 25px;
+    background-color: green;
+    color: orange;
+}
