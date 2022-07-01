@@ -1,0 +1,16 @@
+div h1::before{
+    content: "F ";
+}
+div h1::after{
+    content: " F";
+}
+p::first-letter{
+    color:red;
+}
+div p::first-line{
+    color:red;
+}
+
+div{
+    box-shadow:0 0 14px rgba(0, 0, 0, 0.5);
+}
