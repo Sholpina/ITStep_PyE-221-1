@@ -33,3 +33,12 @@ li:nth-child(2){
 li:not(.not-child){
     background-color: green;
 }
+
+button{
+    background-color: blue;
+    padding: 15px 50px;
+}
+
+button:hover{
+    background-color: green;
+}
