@@ -31,7 +31,7 @@ h1{
    max-width: 768px;
    position: relative;
    padding: 10px 0 10px 20px;
-   margin: 80px auto;
+   margin: 80px auto 40px;
    border-left: 4px solid #D9AA63;
 }
 
@@ -63,10 +63,10 @@ h1{
 
 .toc li:before{
    counter-increment: li;
-   content: counter(li, "");
+   content: counters(li, "");
    margin-right: 10px;
    font-weight: 700;
-   width: 28px
+   width: 28px;
    height: 28px;
    text-align: center;
    line-height: 28px;
@@ -76,7 +76,7 @@ h1{
    transition: .3s linear;
 }
 
-.toc li:hover{
+.toc li:hover:before{
    border-color: #D9AA63;
    color:#D9AA63;
 }
