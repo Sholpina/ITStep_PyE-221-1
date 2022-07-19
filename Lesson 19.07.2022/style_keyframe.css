@@ -1,0 +1,41 @@
+.key{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.key:before{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	top: 40px;
+	animation: eye 3s ease infinite;
+}
+
+.key:after{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	top: 40px;
+	animation: eye 3s ease infinite;
+}
+
+.key:before{
+	left: 55px;
+}
+
+.key:after{
+	right: 55px;
+}
+
+@keyframes eye{
+	90% {transform: none}
+	95% {transform: scaleY(.1);}
+}
