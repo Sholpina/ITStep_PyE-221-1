@@ -249,13 +249,43 @@ div{
 
 @keyframes animtion_pulse{
   0%{
-    box-shadow: 0, 0, 0, 0 rgba(219, 31, 31, 0);
+    box-shadow: 0 0 0 0 rgba(219, 31, 31, 0);
   }
   70%{
-    box-shadow: 0, 0, 0, 20px rgba(219, 31, 31, 0.6);
+    box-shadow: 0 0 0 20px rgba(219, 31, 31, 0.6);
   }
   100%{
-    box-shadow: 0, 0, 0, 0 rgba(219, 31, 31, 0);
+    box-shadow: 0 0 0 0 rgba(219, 31, 31, 0);
+  }
+}
+
+.animate-pulse2{
+  height: 100px;
+  width: 250px;
+  line-height: 75px;
+  background-color: rgb(204, 34, 34);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  animation: animtion_pulse2 3s ease infinite;
+}
+
+.animate-pulse2:hover{
+  animation: none;
+}
+
+@keyframes animtion_pulse2{
+  0%{
+    box-shadow: 0 0 0 0 rgba(219, 31, 31, 0.4);
+  }
+  70%{
+    box-shadow: 0 0 0 20px rgba(219, 31, 31, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(219, 31, 31, 0);
   }
 }
 
