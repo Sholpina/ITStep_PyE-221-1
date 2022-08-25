@@ -61,11 +61,31 @@
 
 // // Task two
 
-let age = +prompt("Enter your age");
+// let age = +prompt("Enter your age");
 
-if (age > 0 && age < 120){
-    alert("Correct");
+// if (age > 0 && age < 120){
+//     alert("Correct");
+// }
+// else{
+//     alert("Invalid age");
+// }
+
+// // Task three
+
+// let number = +prompt("Enter your number");
+
+// alert(Math.abs(number));
+
+let number = +prompt("Enter your number");
+
+if (number > 0 ){
+    alert(number);
+}
+else if (number < 0) {
+    alert(-1*number);
 }
 else{
-    alert("Invalid age");
+    alert(0);
 }
+
+// Task four
