@@ -24,7 +24,7 @@
 // toUpperCase = с asdasd в ASDASD
 // toLowerCase = с ASDASD в asdasd
 
-let str = "I hope you understand this description of this"; 
+// let str = "I hope you understand this description of this"; 
 
 // let target = "h";
 
@@ -73,3 +73,58 @@ let str = "I hope you understand this description of this";
 // alert(String.fromCodePoint(97)); // a
 // alert(String.fromCodePoint(65)); // A
 
+// let str = "                           asdfasd@gasd.com                          ";
+
+// alert(str.trim()); // удаление всех пробелов
+// alert(str.trimRight()); // удаление пробелов справа
+// alert(str.trimLeft()); // удаление пробелов слева
+
+// let str = "You are not allowed to access this website.";
+
+// str = str.split(' '); // делит через что-то в нашем случае это пробел
+
+// str = str.join('?'); // соединяет через что-то, здесь уже вопросительный знак
+
+// alert(str);
+
+// // Task one
+
+// let str = "asdasdadas"
+
+// function changeCase(str){
+//     if(str == str.toLowerCase()) return str.toUpperCase();
+//     else return str.toLowerCase();
+// }
+
+// let str = "Lorem Ipsum dolor sit amet consectetur adipiscing else"
+
+// let separator = prompt("Entre the divider")
+
+// function divideBySmth(str, separator){
+//     return str.split(separator);
+// }
+
+// alert(divideBySmth(str, separator));
+
+// let str = "some random string with no capital";
+
+// function capitalizeFirstChar(str){
+//     return str.charAt(0).toUpperCase() + str.slice(1)
+// }
+// function capitalizeFirstChar(str){
+//     return str[0].toUpperCase() + str.slice(1)
+// }
+
+// alert(capitalizeFirstChar(str));
+
+// 1 Дается предложение в котором нужно капитализировать первые буквы всех слов
+
+// 2 Создавть функцию которая меняет регистр
+// К примеру из строки:
+// SoMe SeNtEnCe WiTh CaMeL CaSe
+
+// сделать:
+// sOmE sEnTeNcE wItH cAmEl cAsE
+
+// 3.Создать функцию которая перевернет строку. К примеру из HELLO сделает OLLEH
+// Реализация должна иметь 2 версии. Через функцию и строки. И через цикл for
