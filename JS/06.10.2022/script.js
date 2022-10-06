@@ -1,32 +1,32 @@
 // Созадем кнопку закрытия
 
-let myNodeList = document.getElementsByTagName('li');
+let myNodeList = document.getElementsByTagName('li'); // Я ищу элементы с тегом li
 for(let i = 0; i < myNodeList.length; i++) {
-    let span = document.createElement('span');
-    let txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.append(txt);
-    myNodeList[i].appendChild(span);
+    let span = document.createElement('span'); // создаю элемент span
+    let txt = document.createTextNode("\u00D7"); // создаю текст
+    span.className = "close"; // присваиваю класс этегу span
+    span.append(txt); // добавляю текст внутрь span
+    myNodeList[i].appendChild(span); // добавляю span внутрь уже имеющихся li
 }
 
 
 // Добавляем функцию удаления
 
-let close = document.getElementsByClassName('close');
-for(let i = 0; i < close.length; i++) {
+let close = document.getElementsByClassName('close'); // ищу элементы с классом close
+for(let i = 0; i < close.length; i++) { 
     close[i].onclick = function() {
-        let div = this.parentElement;
-        div.style.display = "none";
+        let div = this.parentElement; // обращаюсь к родительному элементу
+        div.style.display = "none"; // "удаляем" элемент
     }
 }
 
 
 // Добавляем проверку checked 
 
-let list = document.querySelector('ul');
+let list = document.querySelector('ul'); // ищу элементы с тегом ul
 list.addEventListener('click', function(ev){
-    if(ev.target.tagName === "LI"){
-        ev.target.classList.toggle('checked');
+    if(ev.target.tagName === "LI"){ // созадю проверку на тег li
+        ev.target.classList.toggle('checked'); // если проверка успешна, к Li присваивается класс checked
     }
 }, false);
 
@@ -34,26 +34,26 @@ list.addEventListener('click', function(ev){
 // Создание нового элемента
 
 function newElement(){
-    let li = document.createElement('li');
-    let inputValue = document.getElementById('myInput').value;
-    let t = document.createTextNode(inputValue);
-    li.append(t);
-    if (inputValue === ''){
+    let li = document.createElement('li'); // ищу элементы с тегом li
+    let inputValue = document.getElementById('myInput').value; // получаю знаечние нашего input
+    let t = document.createTextNode(inputValue); // записываю в текст значение input
+    li.append(t); // добавляю это значение внутрь li
+    if (inputValue === ''){ // создаю проверку на пустоту значения
         alert('Please enter something!');
     }else{
-        document.getElementById('myUl').append(li);
+        document.getElementById('myUl').append(li); // если значение не пустое то добавляю li внутрь ul
     }
-    document.getElementById('myInput').value = "";
+    document.getElementById('myInput').value = ""; // Обнуляю значение input
     
-    let span = document.createElement('span');
-    let txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.append(txt);
-    li.append(span);
+    let span = document.createElement('span'); // создаю элемент span
+    let txt = document.createTextNode("\u00D7"); // создаю текст
+    span.className = "close"; // присваиваю span класс close
+    span.append(txt); // добавляю текст в span
+    li.append(span); // добавляю span в li
 
-    for(let i = 0; i < close.length; i++){
+    for(let i = 0; i < close.length; i++){ // создаю функцию закрытия, удаления
         close[i].onclick = function(){
-            let div = this.parentElement;
+            let div = this.parentElement; 
             div.style.display = "none";
         }
     }
