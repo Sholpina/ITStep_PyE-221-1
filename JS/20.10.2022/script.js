@@ -50,17 +50,55 @@
 //     1000
 // );
 
-keyinput.onkeydown = keyinput.onkeyup = keyinput.onkeypress = handle;
+// keyinput.onkeydown = keyinput.onkeyup = keyinput.onkeypress = handle;
 
-function handle(e) {
-    let text = e.type + ' key=' + e.key +
-    ' code=' + e.code +
-    (e.shiftKey ? ' shiftkey' : '') + 
-    (e.ctrlKey ? ' ctrlkey' : '') + 
-    (e.altKey ? ' altkey' : '') + 
-    (e.metaKey ? ' metakey' : '') + 
-    (e.repeat ? '(repeat)' : '') + 
-    "\n";
+// function handle(e) {
+//     let text = e.type + ' key=' + e.key +
+//     ' code=' + e.code +
+//     (e.shiftKey ? ' shiftkey' : '') + 
+//     (e.ctrlKey ? ' ctrlkey' : '') + 
+//     (e.altKey ? ' altkey' : '') + 
+//     (e.metaKey ? ' metakey' : '') + 
+//     (e.repeat ? '(repeat)' : '') + 
+//     "\n";
 
-    area.value = text;
+//     area.value = text;
+// }
+
+
+function show(){
+    let input = document.querySelector('.hexInput').value;
+    console.log(input);
+    switch(input){
+        case "1":
+            alert('!');
+            break;
+        case "2":
+            alert('@');
+            break;
+        case "3":
+            alert('#');
+            break;
+        case "4":
+            alert('$');
+            break;
+        case "5":
+            alert('%');
+            break;
+        case "6":
+            alert('^');
+            break;
+        case "7":
+            alert('&');
+            break;
+        case "8":
+            alert('*');
+            break;
+        case "9":
+            alert('(');
+            break;
+        case "0":
+            alert(')');
+            break;
+    }
 }
