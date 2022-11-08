@@ -93,3 +93,5 @@ function readXml(xml){
     }
     document.getElementById("change").innerHTML = table;
 }
+
+// Добавить еще 2 столбца. COMPANY и PRICE
